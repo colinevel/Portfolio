@@ -1,0 +1,50 @@
+.Container {
+    background-color: grey;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Container h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 5vh auto;
+}
+
+.ContactForm {
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactForm label {
+    color: #fff;
+    margin: 3vh auto;
+    font-size: 1.6rem;
+}
+
+.ContactForm textarea {
+    height: 16vh;
+    width: 35vw;
+}
+
+.ContactForm input {
+    height: 3vh;
+    width: 25vw;
+    text-align: center;
+}
+
+.ContactForm button {
+    margin-top: 5vh;
+    padding: 1vh;
+    background-color: #e5af04;
+    color: #555151;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+} 
+

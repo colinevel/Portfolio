@@ -1,0 +1,31 @@
+.Container {
+    background-image: url("../../images/yellowbg.png");
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    box-sizing: border-box;
+}
+
+.App a img {
+    max-width: 100vw;
+    height: 30vh;
+    margin-bottom: 4vh;
+}
+
+.App h2{
+    color: grey;
+    font-size: 2rem;
+    margin-bottom: 4vh;
+}
+
+.App p {
+    color: grey;
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 40vw;
+    padding: auto 5vh;
+}

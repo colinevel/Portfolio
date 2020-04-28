@@ -21,6 +21,11 @@
     color: grey;
     text-decoration: none;
     font-size: 1.2rem;
+    padding-bottom: 4px;
+}
+
+.NavItems li a:hover {
+    border-bottom: 2px solid grey;
 }
 
 @media (max-width: 499px) {
