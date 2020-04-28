@@ -3,6 +3,8 @@ import './App.css';
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Header/Navbar";
 import MobileMenu from "./Components/Header/MobileMenu/MobileMenu";
+import About from "./Components/About/About";
+import MyProjects from "./Components/MyProjects/MyProjects";
 
 function App(props) {
  
@@ -18,6 +20,8 @@ function App(props) {
       <Navbar mobileMenu={handleClick}/>
       <MobileMenu show={menuMobile} />
       <Home />
+      <About />
+      <MyProjects />
     </div>
   );
 }
