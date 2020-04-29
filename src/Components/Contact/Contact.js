@@ -39,7 +39,7 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <section className={styles.Container}>
+            <section id="contact" className={styles.Container}>
                 <div className={styles.FormContainer}>
                     <h2>Contact Form</h2>
                     <form className={styles.ContactForm} onSubmit={ (e) => this.formSubmit(e)}>

@@ -1,16 +1,45 @@
 import React from 'react';
 import styles from "./Navbar.module.css";
+import { Link } from "react-scroll";
 
 
 export default function NavigationItems() {
 
 
     return (
-        <ul className={[styles.NavItems, styles.DesktopOnly].join(" ")}>
-            <li><a href="/">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#myprojects">MY PROJECTS</a></li>
-            <li><a href="/">CONTACT</a></li>
-        </ul>
+        <div className={[styles.NavItems, styles.DesktopOnly].join(" ")}>
+            <Link
+            className={styles.Item}
+            activeClass={styles.Active}
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration= {500}>HOME</Link>
+            <Link
+            className={styles.Item}
+            activeClass={styles.Active}
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration= {500}>ABOUT</Link>
+            <Link
+            className={styles.Item}
+            activeClass={styles.Active}
+            to="myProjects"
+            spy={true}
+            smooth={true}
+            offset={-59}
+            duration= {500}>MY PROJECTS</Link>
+            <Link
+            className={styles.Item}
+            activeClass={styles.Active}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration= {500}>CONTACT</Link>
+        </div>
     )
 }

@@ -5,7 +5,7 @@ import bookswap from "../../images/BookSwap.png";
 
 export default function MyProjects() {
     return (
-        <section id="myprojects" className={styles.Container}>
+        <section id="myProjects" className={styles.Container}>
             <h2>My Projects</h2>
             <div className={styles.MyProjects}>
             <div className={styles.ImgContainer}>

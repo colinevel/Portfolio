@@ -38,6 +38,23 @@
     justify-self: flex-end;
 }
 
+.ContactButton {
+    width: 10vw;
+    padding: 1.8vh 0;
+    align-self: center;
+    border: 1px solid #fff;
+    background-color: #e5af04;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.ContactButton:hover {
+    background-color: #fff;
+    color: #e5af04;
+}
+
 
 .Technos {
     width: 50vw;

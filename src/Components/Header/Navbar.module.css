@@ -3,6 +3,7 @@
     height: 8vh;
     width: 100vw;
     background-color: #e5af04;
+    z-index: 4;
 }
 
 
@@ -17,14 +18,19 @@
     float: right;
 }
 
-.NavItems li a {
+.Item {
     color: grey;
     text-decoration: none;
     font-size: 1.2rem;
     padding-bottom: 4px;
+    cursor: pointer;
 }
 
-.NavItems li a:hover {
+.Item:hover {
+    border-bottom: 2px solid grey;
+}
+
+.Active {
     border-bottom: 2px solid grey;
 }
 

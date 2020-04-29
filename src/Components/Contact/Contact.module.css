@@ -47,7 +47,7 @@
   }
 
 .ContactForm input:focus{
-    outline: none!important
+    outline: none!important;
 }
 
 .ContactForm textarea {
