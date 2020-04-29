@@ -30,12 +30,15 @@
 .ContactForm textarea {
     height: 16vh;
     width: 35vw;
+    font-size: 1.4em;
+    color: #555151;
 }
 
 .ContactForm input {
     height: 3vh;
     width: 25vw;
-    text-align: center;
+    font-size: 1.4em;
+    color: #555151;
 }
 
 .ContactForm button {
@@ -46,5 +49,9 @@
     border: none;
     font-size: 1.2rem;
     border-radius: 4px;
-} 
+}
+
+.ContactForm button:hover{
+    opacity: 0.8;
+}
 
