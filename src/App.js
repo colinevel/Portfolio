@@ -15,17 +15,16 @@ function App(props) {
   const handleClick = () => {
         setmenuMobile(!menuMobile);
     }
-    // const myRef = useRef(null);
-
-    // const executeScroll = (ref) => {
-    //   window.scrollTo(0, ref.current.offsetTop);
-    // }
+  
+  const handleClosingSideDrawer = () => {
+      setmenuMobile(false);
+  }
 
 
   return (
     <div className="App">
       <Navbar mobileMenu={handleClick}/>
-      <MobileMenu show={menuMobile} />
+      <MobileMenu show={menuMobile} removed={handleClosingSideDrawer} />
       <Home />
       <About />
       <MyProjects />

@@ -13,7 +13,7 @@ export default function MobileMenu(props) {
         <React.Fragment>
         <div className={attachedStyles.join(" ")}>
             <div className={styles.NavItems}>
-            <NavigationItems />
+            <NavigationItems removed={props.removed} />
             </div>
         </div>
         </React.Fragment>

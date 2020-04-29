@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
 
 
-export default function NavigationItems() {
+export default function NavigationItems(props) {
 
 
     return (
@@ -15,6 +15,7 @@ export default function NavigationItems() {
             spy={true}
             smooth={true}
             offset={-60}
+            onClick={props.removed}
             duration= {500}>HOME</Link>
             <Link
             className={styles.Item}
@@ -23,6 +24,7 @@ export default function NavigationItems() {
             spy={true}
             smooth={true}
             offset={-60}
+            onClick={props.removed}
             duration= {500}>ABOUT</Link>
             <Link
             className={styles.Item}
@@ -31,6 +33,7 @@ export default function NavigationItems() {
             spy={true}
             smooth={true}
             offset={-59}
+            onClick={props.removed}
             duration= {500}>MY PROJECTS</Link>
             <Link
             className={styles.Item}
@@ -39,6 +42,7 @@ export default function NavigationItems() {
             spy={true}
             smooth={true}
             offset={-60}
+            onClick={props.removed}
             duration= {500}>CONTACT</Link>
         </React.Fragment>
     )
