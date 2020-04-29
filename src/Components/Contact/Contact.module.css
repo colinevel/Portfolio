@@ -85,3 +85,28 @@
     opacity: 0.8;
 }
 
+
+@media (max-width: 700px) {
+    .FormContainer {
+        width: 75vw;
+    }
+    .FormContainer h2 {
+        font-size: 1.6rem;
+        margin: 5vh auto;
+    }
+    .ContactForm {
+        width: 75vw;
+    }
+    .ContactForm input {
+        width: 55vw;
+        font-size: 1em;
+    }
+    .ContactForm textarea {
+        width: 55vw;
+        font-size: 1em;
+    }
+    .ContactForm button {
+        font-size: 1rem;
+    }
+}
+

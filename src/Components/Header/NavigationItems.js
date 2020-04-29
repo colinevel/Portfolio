@@ -7,7 +7,7 @@ export default function NavigationItems() {
 
 
     return (
-        <div className={[styles.NavItems, styles.DesktopOnly].join(" ")}>
+        <React.Fragment>
             <Link
             className={styles.Item}
             activeClass={styles.Active}
@@ -40,6 +40,6 @@ export default function NavigationItems() {
             smooth={true}
             offset={-60}
             duration= {500}>CONTACT</Link>
-        </div>
+        </React.Fragment>
     )
 }

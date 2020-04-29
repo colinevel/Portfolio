@@ -34,8 +34,29 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .HomeContainer{
   background-image: url("../../images/backgroundMobile.png");
   }
+
+  .Infos{
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 40vh;
+}
+
+.ProfilePic {
+  border-radius: 50vh;
+  max-width: 25vw;
+  margin-bottom: 10vh;
+  margin-top: 6vh;
+
+}
+
+
 }

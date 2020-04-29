@@ -12,7 +12,7 @@
     transition: transform 0.3s ease-out;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .SideDrawer {
         display: none;
     }
@@ -26,19 +26,10 @@
     transform: translateX(100%);
 }
 
-.MobileMenu {
+.NavItems {
     display: flex;
     height: 20vh;
     flex-flow: column;
     justify-content: space-between;
     align-items: stretch;
-}
-
-.MobileMenu li {
-    list-style: none;
-}
-
-.MobileMenu li a {
-    color: #fff;
-    text-decoration: none;
 }

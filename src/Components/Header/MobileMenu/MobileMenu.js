@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "./MobileMenu.module.css";
+import NavigationItems from "../NavigationItems";
 
 export default function MobileMenu(props) {
 
@@ -11,12 +12,9 @@ export default function MobileMenu(props) {
     return (
         <React.Fragment>
         <div className={attachedStyles.join(" ")}>
-            <nav className={styles.MobileMenu}>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">ABOUT</a></li>
-                <li><a href="/">MY PROJECTS</a></li>
-                <li><a href="/">CONTACT</a></li>
-            </nav>
+            <div className={styles.NavItems}>
+            <NavigationItems />
+            </div>
         </div>
         </React.Fragment>
     )

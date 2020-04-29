@@ -23,7 +23,7 @@ export default function About() {
             </div>
             <div className={styles.Technos}>
                 <h2>Technologies I use</h2>
-                <ul>
+                <ul className={styles.TechnosLogos}>
                     <li><img src={NodeJSLogo} alt="nodeJSlogo" /></li>
                     <li><img src={ReactJSLogo} alt="reactJSlogo" /></li>
                     <li><img src={MongoDBLogo} alt="mongodblogo" /></li>

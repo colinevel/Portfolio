@@ -5,3 +5,13 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
   }
+
+  @media (max-width: 700px) {
+    .TyperText {
+      color: grey;
+      width: 35vw;
+      height: 25vh;
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+    }
+  }

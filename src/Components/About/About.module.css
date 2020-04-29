@@ -27,19 +27,19 @@
 
 .AboutMe p {
     font-size: 1.7rem;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     text-align: justify;
 }
 
 .AboutMe h3 {
     font-size: 1.7rem;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
     justify-self: flex-end;
 }
 
 .ContactButton {
-    width: 10vw;
+    width: 20vw;
     padding: 1.8vh 0;
     align-self: center;
     border: 1px solid #fff;
@@ -57,33 +57,75 @@
 
 
 .Technos {
-    width: 50vw;
+    width: 80vw;
+    height: 20vh;
     margin: 2vh 5vh;
     color: #fff;
 }
 
 .Technos h2 {
     font-size: 2rem;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 
-.Technos ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 50vh;
+.TechnosLogos {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1vw;
 }
 
-.Technos ul li {
+.TechnosLogos li {
     list-style: none;
 }
 
-.Technos ul li img{
+.TechnosLogos li img{
     max-width: 100vw;
     height: 10vh;
 }
 
-.Technos ul li :nth-child(4n) img{
+.TechnosLogos li :nth-child(4n) img{
     max-width: 100vw;
     height: 50vh;
+}
+
+@media (max-width: 700px) {
+
+.AboutMe h2 {
+    font-size: 1.6rem;
+    margin-bottom: 3vh;
+}
+
+.AboutMe p {
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+}
+
+.AboutMe h3 {
+    font-size: 1.2rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.ContactButton {
+    width: 26vw;
+    padding: 1vh 0;
+    font-size: 0.6rem;
+    font-weight: none;
+}
+
+.Technos {
+    width: 70vw;
+    color: #fff;
+}
+
+.Technos h2 {
+    font-size: 1.3rem;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.Technos ul li img{
+    height: 6vh;
+}
+
 }

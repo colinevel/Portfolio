@@ -10,7 +10,7 @@
 .NavItems {
     display: flex;
     height: inherit;
-    width: 50vw;
+    width: 60vw;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -34,9 +34,13 @@
     border-bottom: 2px solid grey;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 699px) {
     .DesktopOnly{
         display: none;
+    }
+    .Item {
+        color: #e5af04;
+        font-size: 1.2rem;
     }
 }
 
@@ -55,12 +59,12 @@
 }
 
 .HamburgerToggle div {
-    width: 90%;
+    width: 40px;
     height: 3px;
     background-color: white;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .HamburgerToggle {
         display: none;
     }

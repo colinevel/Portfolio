@@ -7,7 +7,9 @@ export default function Navbar(props) {
 
     return (
         <header className={styles.Header}>
+            <div className={[styles.NavItems, styles.DesktopOnly].join(" ")}>
             <NavigationItems />
+            </div>
             <div className={styles.HamburgerToggle} onClick={props.mobileMenu}>
                 <div></div>
                 <div></div>

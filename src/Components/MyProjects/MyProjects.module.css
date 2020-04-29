@@ -11,8 +11,8 @@
 }
 
 .MyProjects {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: flex-start;
     justify-content: space-between;
     padding: 5vh 5vw;
@@ -86,8 +86,49 @@
     text-decoration: none;
     z-index: 1;
     border-radius: 4px;
+    transition: background-color .35s ease;
+  }
+
+  .ImgButton a:hover{
+      background-color: #e5af04;
   }
   
   .ImgContainer:hover .ImgButton {
     opacity: 1;
+  }
+
+  @media (max-width: 700px) {
+
+    .MyProjects {
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 3vh 5vw;
+    }
+
+    .ImgContainer {
+        margin-top: 20px;
+        width: 65vw;
+        height: 30vh;
+      }
+
+      .ImgContainer img {
+        width: 65vw;
+        height: 30vh;
+        left: 0;
+  }
+
+    .ImgButton {
+    width: 36vw;
+    left: 12vw;
+    top: 20vh;
+  }
+
+    .ImgButton a {
+    width: 36vw;
+    padding: 8px 10px;
+  }
+
   }

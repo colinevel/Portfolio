@@ -41,7 +41,7 @@ export default class Contact extends Component {
         return (
             <section id="contact" className={styles.Container}>
                 <div className={styles.FormContainer}>
-                    <h2>Contact Form</h2>
+                    <h2>Drop me a line</h2>
                     <form className={styles.ContactForm} onSubmit={ (e) => this.formSubmit(e)}>
 
                     <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
