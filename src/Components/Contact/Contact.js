@@ -12,9 +12,6 @@ export default class Contact extends Component {
         buttonText: 'Send Message'
     }
 
-
-
-
     formSubmit = (e) => {
         e.preventDefault()
       
@@ -28,7 +25,7 @@ export default class Contact extends Component {
             message: this.state.message
         }
         
-        axios.post('API_URI', data)
+        axios.post('https://portfolio-back.now.sh/', data)
         .then( res => {
             this.setState({ sent: true }, this.resetForm())
         })
@@ -36,6 +33,15 @@ export default class Contact extends Component {
           console.log('Message not sent')
         })
       }
+
+      resetForm = () => {
+        this.setState({
+            name: '',
+            message: '',
+            email: '',
+            buttonText: 'Message Sent'
+        })
+    }
 
     render() {
         return (

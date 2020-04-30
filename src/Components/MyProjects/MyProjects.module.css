@@ -1,134 +1,135 @@
 .Container {
-    background-image: url("../../images/yellowbg.png");
-    width: 100vw;
-    height: 92vh;
-    padding-top: 5vh;
+  background-image: url("../../images/yellowbg.png");
+  width: 100vw;
+  height: 92vh;
+  padding-top: 5vh;
 }
 
 .Container h2 {
-    font-size: 2.2rem;
-    color: grey;
+  font-size: 2.2rem;
+  color: grey;
 }
 
 .MyProjects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 5vh 5vw;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5vh 5vw;
+  box-sizing: border-box;
 }
 
 
 .ImgContainer {
-    position: relative;
-    margin-top: 50px;
-    width: 40vw;
-    height: 40vh;
+  position: relative;
+  margin-top: 50px;
+  width: 40vw;
+  height: 40vh;
+}
+
+.ImgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.ImgContainer:hover .ImgOverlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.ImgContainer img {
+      position: absolute;
+      width: 40vw;
+      height: 40vh;
+      left: 0;
+}
+
+.ImgTitle {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.ImgContainer:hover .ImgTitle {
+  top: 90px;
+}
+
+.ImgButton {
+  position: absolute;
+  width: 40vw;
+  left:0;
+  top: 25vh;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.ImgButton a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  border-radius: 4px;
+  transition: background-color .35s ease;
+}
+
+.ImgButton a:hover{
+    background-color: #e5af04;
+}
+
+.ImgContainer:hover .ImgButton {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+
+  .MyProjects {
+      display: flex;
+      height: 80vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 3vh 5vw;
   }
 
-  .ImgOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.5s ease;
-  }
-
-  .ImgContainer:hover .ImgOverlay {
-    display: block;
-    background: rgba(0, 0, 0, .3);
-  }
-
-  .ImgContainer img {
-        position: absolute;
-        width: 40vw;
-        height: 40vh;
-        left: 0;
-  }
-
-  .ImgTitle {
-    position: absolute;
-    width: 500px;
-    left: 0;
-    top: 120px;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    z-index: 1;
-    transition: top .5s ease;
-  }
-
-  .ImgContainer:hover .ImgTitle {
-    top: 90px;
-  }
-
-  .ImgButton {
-    position: absolute;
-    width: 40vw;
-    left:0;
-    top: 25vh;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-  }
-
-  .ImgButton a {
-    width: 200px;
-    padding: 12px 48px;
-    text-align: center;
-    background-color: grey;
-    color: white;
-    text-decoration: none;
-    z-index: 1;
-    border-radius: 4px;
-    transition: background-color .35s ease;
-  }
-
-  .ImgButton a:hover{
-      background-color: #e5af04;
-  }
-  
-  .ImgContainer:hover .ImgButton {
-    opacity: 1;
-  }
-
-  @media (max-width: 700px) {
-
-    .MyProjects {
-        display: flex;
-        height: 80vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 3vh 5vw;
+  .ImgContainer {
+      margin-top: 20px;
+      width: 65vw;
+      height: 30vh;
     }
 
-    .ImgContainer {
-        margin-top: 20px;
-        width: 65vw;
-        height: 30vh;
-      }
+    .ImgContainer img {
+      width: 65vw;
+      height: 30vh;
+      left: 0;
+}
 
-      .ImgContainer img {
-        width: 65vw;
-        height: 30vh;
-        left: 0;
-  }
+  .ImgButton {
+  width: 32vw;
+  left: 15vw;
+  top: 20vh;
+}
 
-    .ImgButton {
-    width: 36vw;
-    left: 12vw;
-    top: 20vh;
-  }
+  .ImgButton a {
+  width: 32vw;
+  font-size: 10px;
+  padding: 8px 10px;
+}
 
-    .ImgButton a {
-    width: 36vw;
-    padding: 8px 10px;
-  }
-
-  }
+}
